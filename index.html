@@ -3,108 +3,182 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Mohammed Tareq - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
-        .color{
-            background-color: rgb(228, 222, 222);
+        .section-padding {
+            padding: 80px 0;
         }
-        .color-b{
-            background-color: rgb(183, 178, 178);
+        .bg-light-gray {
+            background-color: #f8f9fa;
+        }
+        .skill-badge {
+            margin: 5px;
+            padding: 8px 15px;
+            background-color: #e9ecef;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .project-card {
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
         }
     </style>
 </head>
 <body>
 
-
-<header class="container">
-
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./img/67eee750499da.png" class="rounded img-fluid" width="30px" alt="" >
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse ms-auto" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+<header class="section-padding bg-light-gray">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-4">Mohammed Tareq</h1>
+                <h2 class="text-muted">Full Stack Developer</h2>
+                <div class="mt-4">
+                    <p><i class="bi bi-envelope"></i> email@example.com</p>
+                    <p><i class="bi bi-telephone"></i> +123 456 7890</p>
+                    <p><i class="bi bi-geo-alt"></i> Cairo, Egypt</p>
+                </div>
+                <div class="mt-4">
+                    <a href="#" class="btn btn-success m-2"><i class="bi bi-github"></i></a>
+                    <a href="#" class="btn btn-danger m-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn btn-info m-2"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://img.freepik.com/free-photo/3d-portrait-businessman_23-2150793885.jpg" class="img-fluid rounded-circle shadow" style="max-width: 300px;" alt="Profile Image">
             </div>
         </div>
-    </nav>
+    </div>
 </header>
 
-<section class="color">
-    <div class="container ">
+<section class="section-padding text-center ">
+    <div class="container text-center">
+        <h2 class="mb-4">About Me</h2>
+        <p class="lead">I am a passionate Full Stack Developer with expertise in creating responsive and user-friendly web applications. With a strong foundation in both front-end and back-end technologies, I strive to build efficient and scalable solutions.</p>
+    </div>
+</section>
+
+<section class="section-padding bg-light-gray">
+    <div class="container">
+        <h2 class="mb-4 text-center">Skills</h2>
         <div class="row">
-            <div class="col col-md-6">
-                <div class="col col-6 mx-auto mt-5">
-                    <img src="./img/67eee750499da.png" width="50px" alt="logo">
-                </div>
-                <div class="col col-md-12 mt-5 mx-auto ">
-
-                    <h2>Hi I'm </h2>
-                    <h1>Mohammed Tareq</h1>
-                </div>
-                <div class="col col-md-12 mt-5">
-                    <button class="btn btn-success m-2">
-                        <i class="bi bi-github"></i>
-                    </button>
-                    <button class="btn btn-danger m-2">
-                        <i class="bi bi-instagram"></i>                    </button>
-                    <button class="btn btn-info">
-                        <i class="bi bi-facebook"></i>                    </button>
-
-                </div>
-
+            <div class="col-md-6">
+                <h4>Frontend</h4>
+                <div class="skill-badge">HTML5</div>
+                <div class="skill-badge">CSS3</div>
+                <div class="skill-badge">JavaScript</div>
+                <div class="skill-badge">Bootstrap</div>
+                <div class="skill-badge">React</div>
             </div>
-            <div class="col col-md-6 mx-auto m-4 p-3">
-                <img src="https://img.freepik.com/free-photo/3d-portrait-businessman_23-2150793885.jpg?semt=ais_hybrid&w=740" width="400" class="img-fluid" alt="...">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="mt-5 color-b p-3">
-    <div class="container text-center ">
-        <h2>contact</h2>
-        <div class="row mt-5">
-            <div class="col col-md-6">
-                <div class="input-group mt-5 mb-5">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-                  
-                  <div class="input-group mb-5">
-                    <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="basic-addon2">
-                    <span class="input-group-text" id="basic-addon2">@example.com</span>
-                  </div>
-                  <div class="input-group mb-5">
-                      <span class="input-group-text" id="basic-addon2">Location</span>
-                    <input type="text" class="form-control" placeholder="Location" aria-label="location" aria-describedby="basic-addon2">
-                  </div>
-            </div>
-            <div class="col col-md-6">
-                <img src="data:image/jpeg;base64,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" alt="" width="400">
+            <div class="col-md-6">
+                <h4>Backend</h4>
+                <div class="skill-badge">PHP</div>
+                <div class="skill-badge">MySQL</div>
+                <div class="skill-badge">Node.js</div>
+                <div class="skill-badge">Python</div>
+                <div class="skill-badge">Git</div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Projects Section -->
+<section class="section-padding">
+    <div class="container">
+        <h2 class="mb-4">Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img src="img/67eeea7630939.png" class="card-img-top" width="300" height="200" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Website</h5>
+                        <p class="card-text">A full-featured e-commerce platform with user authentication, product management, and payment integration.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img src="img/67eeea7630939.png" width="300" height="200" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Task Management App</h5>
+                        <p class="card-text">A collaborative task management application with real-time updates and team collaboration features.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img src="img/67eeea7630939.png" width="300" height="200" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">A responsive portfolio website showcasing projects and skills with modern design principles.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Achievements Section -->
+<section class="section-padding bg-light-gray">
+    <div class="container">
+        <h2 class="mb-4">Achievements & Certifications</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development Certification</h5>
+                        <p class="card-text">Completed comprehensive web development training program</p>
+                        <p class="text-muted">Issued by: ITI - 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Project Award</h5>
+                        <p class="card-text">Recognized for outstanding contribution in web development project</p>
+                        <p class="text-muted">Awarded by: Tech Conference - 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section-padding">
+    <div class="container">
+        <h2 class="text-center mb-4">Get In Touch</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <p class="mb-0">© 2024 Mohammed Tareq. All rights reserved.</p>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
